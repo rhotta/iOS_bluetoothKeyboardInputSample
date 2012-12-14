@@ -17,13 +17,25 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+
+    
+    MyUIApplication* app = (MyUIApplication*)[UIApplication sharedApplication];
+    
+    app.keyboardEventDelegate = self;
+    
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)keyboardWithCode:(unsigned long)code event:(unsigned long)event flag:(unsigned long)flag
+{
+    _labelCode.text = [NSString stringWithFormat:@"%lu (%02lXh)",code,code];
+    _labelEvent.text = [NSString stringWithFormat:@"%ld",event];
+    _labelFlag.text = [NSString stringWithFormat:@"%02lXh",flag];
 }
 
 @end

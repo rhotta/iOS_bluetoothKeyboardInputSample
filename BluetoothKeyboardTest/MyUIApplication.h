@@ -8,6 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MyUIApplication : UIAcceleration
+
+@protocol MyKeyboardInputEventDelegate<NSObject>
+
+- (void)keyboardWithCode:(unsigned long)code event:(unsigned long)event flag:(unsigned long)flag;
+
+@end 
+
+@interface MyUIApplication : UIApplication
+
+
+@property (nonatomic, retain) id<MyKeyboardInputEventDelegate> keyboardEventDelegate;
 
 @end

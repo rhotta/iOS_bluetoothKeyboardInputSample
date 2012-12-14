@@ -18,6 +18,7 @@
 		71C194F61679627B003621C0 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 71C194F51679627B003621C0 /* Default-568h@2x.png */; };
 		71C194F91679627B003621C0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71C194F81679627B003621C0 /* ViewController.m */; };
 		71C194FC1679627B003621C0 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 71C194FA1679627B003621C0 /* ViewController.xib */; };
+		71C1950416796B32003621C0 /* MyUIApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 71C1950316796B32003621C0 /* MyUIApplication.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,8 @@
 		71C194F71679627B003621C0 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		71C194F81679627B003621C0 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		71C194FB1679627B003621C0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		71C1950216796B32003621C0 /* MyUIApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyUIApplication.h; sourceTree = "<group>"; };
+		71C1950316796B32003621C0 /* MyUIApplication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyUIApplication.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +91,8 @@
 				71C194F71679627B003621C0 /* ViewController.h */,
 				71C194F81679627B003621C0 /* ViewController.m */,
 				71C194FA1679627B003621C0 /* ViewController.xib */,
+				71C1950216796B32003621C0 /* MyUIApplication.h */,
+				71C1950316796B32003621C0 /* MyUIApplication.m */,
 				71C194E61679627B003621C0 /* Supporting Files */,
 			);
 			path = BluetoothKeyboardTest;
@@ -176,6 +181,7 @@
 				71C194EC1679627B003621C0 /* main.m in Sources */,
 				71C194F01679627B003621C0 /* AppDelegate.m in Sources */,
 				71C194F91679627B003621C0 /* ViewController.m in Sources */,
+				71C1950416796B32003621C0 /* MyUIApplication.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,6 +295,7 @@
 				71C195011679627B003621C0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

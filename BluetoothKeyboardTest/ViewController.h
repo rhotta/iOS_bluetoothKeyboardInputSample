@@ -7,7 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MyUIApplication.h"
 
-@interface ViewController : UIViewController
+
+@interface ViewController : UIViewController<MyKeyboardInputEventDelegate>
+{
+    IBOutlet UILabel* _labelCode;
+    IBOutlet UILabel* _labelFlag;
+    IBOutlet UILabel* _labelEvent;
+    
+}
 
 @end
